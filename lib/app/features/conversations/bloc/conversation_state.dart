@@ -22,6 +22,18 @@ class ConversationLoaded extends ConversationState {
     this.messages,
   });
 
+  ConversationLoaded copyWith({
+    List<Conversation>? conversations,
+    String? selectedConversationId,
+    List<Message>? messages,
+  }) {
+    return ConversationLoaded(
+      conversations: conversations ?? this.conversations,
+      selectedConversationId: selectedConversationId ?? this.selectedConversationId,
+      messages: messages ?? this.messages,
+    );
+  }
+
   @override
   List<Object> get props => [conversations, selectedConversationId ?? '', messages ?? []];
 }
