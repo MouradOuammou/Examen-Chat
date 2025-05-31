@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import '../bloc/conversation_bloc.dart';
-import '../models/conversation.dart';
+import '../bloc/conversation_event.dart';
+import '../bloc/conversation_state.dart';
 import 'conversation_detail_screen.dart';
 import '../widgets/conversation_item.dart';
 import '../widgets/new_conversation_dialog.dart';
